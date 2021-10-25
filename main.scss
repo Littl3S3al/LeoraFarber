@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Whitney Light Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Whitney Light Regular'), url('fonts/whitneylight.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +26,7 @@ html {
     width: 100%;
 }
 body {
-    font-family: "halyard-display", sans-serif;
+    font-family: 'Whitney Light Regular';
     font-size: 15px;
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
@@ -90,14 +97,12 @@ a:focus {
     font-size: 15px;
     margin: 0 0 15px;
     font-weight: normal;
+    font-family: 'Whitney Light Italic';
 }
 .frame__links {
     margin-top: 15px;
 }
-.frame__links a:not(:last-child),
-.frame__demos a:not(:last-child) {
-    margin-right: 15px;
-}
+
 .frame__demos {
     margin: 15px 0;
 }
@@ -220,7 +225,12 @@ a {
 
 
 
-
+ul{
+    li{
+        list-style: none;
+        margin-bottom: 10px;
+    }
+}
 
 
 .demo-2 {
@@ -235,8 +245,8 @@ a {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    height: 97%;
+    justify-content: end;
     left: 0;
     opacity: 0;
     position: fixed;
@@ -249,7 +259,12 @@ a {
     transition: opacity 0.4s ease;
 }
 .demo-2__title {
-    font: 800 20rem/1 "moret", serif;
+    font-family: 'Whitney Light Regular';
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    line-height: 0.8em;
+    letter-spacing: 5px;
 }
 .demo-2__description {
     font-size: 2rem;
